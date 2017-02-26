@@ -21,7 +21,29 @@ public class Lambda {
 	        pessoas.add(new Pessoa("Stella", 5, "Jose Bonini"));
 	        pessoas.add(new Pessoa("Cleiton", 20, "Julio Marcari"));
 	        pessoas.add(new Pessoa("Luiz", 358, "José Bonifacio"));
+	        
+//	        Runnable runnable = new Runnable() {
+//	        	
+//				@Override
+//				public void run() {	
+//			
+//				  Collections.sort(pessoas, (p1,p2) -> p1.getNome().compareTo(p2.getNome()));
+//				  pessoas.forEach(e -> System.out.println(e.getNome()));
+//				
+//				}
+//			};
+//	     
+//			new Thread(runnable).start();
+	        
+	        
+//	        Runnable runnable = () ->  {
+//				Collections.sort(pessoas, (p1,p2) -> p1.getNome().compareTo(p2.getNome()));
+//				pessoas.forEach(e -> System.out.println(e.getNome()));
+//				};
+//			
+//			new Thread(runnable).start();
 	      
+	        
 			new Thread(() ->  {
 				Collections.sort(pessoas, (p1,p2) -> p1.getNome().compareTo(p2.getNome()));
 				pessoas.forEach(e -> System.out.println(e.getNome()));

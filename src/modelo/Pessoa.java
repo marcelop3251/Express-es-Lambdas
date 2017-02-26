@@ -2,7 +2,7 @@ package modelo;
 
 import java.util.Comparator;
 
-public class Pessoa  {
+public class Pessoa /*implements Comparable<Pessoa> */ {
 
 	private String nome;
 	private int idade;
@@ -33,6 +33,11 @@ public class Pessoa  {
 		this.idade = idade;
 		this.endereco = endereco;
 	}
+	
+//	 @Override
+//	public int compareTo(Pessoa o) {
+//		return this.getNome().compareTo(o.getNome());
+//	}
 
 	
 	
